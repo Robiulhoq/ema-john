@@ -1,0 +1,22 @@
+.logo img{
+    height: 80px;
+}
+.logo{
+    text-align: center;
+}
+.menu-item{
+   line-height: 40px;
+    background-color: black;
+
+}
+.menu-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    
+}
+.menu-item a:hover{
+    background-color: gray;
+}
