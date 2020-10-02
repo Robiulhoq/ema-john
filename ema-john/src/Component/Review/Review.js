@@ -6,15 +6,15 @@ import fakeData from '../../fakeData';
 import Reviewitem from '../Reviewitem/Reviewitem';
 import Cart from '../Cart/Cart';
 import gifimg from '../../images/giphy.gif';
+import { useHistory } from 'react-router-dom';
 
 const Review = () => {
     const [cart, setcart] = useState([]);
     const [odderplaced, setOdderplaced] = useState(false);
+    const history = useHistory();
 
     const hendlePlaceOdder = () =>{
-        setcart([]);
-        setOdderplaced(true);
-       processOrder();
+       history.push('/shipment');
 
     }
 
@@ -50,7 +50,7 @@ const Review = () => {
            </div>
            <div className="cart-container">
                <Cart cart={cart}>
-                   <button onClick={hendlePlaceOdder}>Place odder</button>
+                   <button onClick={hendlePlaceOdder}>Proceed Chackout</button>
                </Cart>
            </div>
         </div>
